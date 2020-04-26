@@ -1,0 +1,13 @@
+@import "../../partials/colors";
+
+.topbar{
+    padding: 12px;
+    background: $dark-gray;
+    div{
+        background: white;
+        opacity: .2;
+        height: 20px;
+        width: 150px;
+        border-radius: 10px;
+    }
+}
