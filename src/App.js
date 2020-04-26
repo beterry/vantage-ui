@@ -5,10 +5,14 @@ import './App.css'
 
 //import sections
 import TopBar from './sections/TopBar/TopBar.component'
+import TicketTabs from './sections/TicketTabs/TicketTabs.component'
 
 const App = () => {
   return (
-    <TopBar />
+    <>
+      <TopBar />
+      <TicketTabs />
+    </>
   )
 }
 

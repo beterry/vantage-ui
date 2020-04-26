@@ -1,0 +1,50 @@
+@import "../../../partials/colors";
+
+.tab{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    h3:last-child{
+        margin-left: 5px;
+    }
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+}
+
+.add{
+    background: $darkest-green;
+    h3{
+        color: $background;
+    }
+}
+
+.inactive{
+    background: $dark-green;
+    h3{
+        color: $darkest-green;
+    }
+}
+
+.active{
+    background: $background;
+    h3{
+        color: $main-green;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .tab{
+        h3:first-child{
+            display: none;
+        }
+    }
+}

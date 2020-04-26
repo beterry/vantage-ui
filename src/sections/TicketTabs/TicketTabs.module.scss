@@ -1,0 +1,12 @@
+@import "../../partials/colors";
+
+.ticketTabs{
+    background-color: $main-green;
+    padding-top: 5px;
+}
+
+.tabsFlex{
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+}
