@@ -1,0 +1,48 @@
+@import "../../partials/colors";
+
+.actionsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border: 1px solid $outline;
+    padding: 10px;
+    border-radius: 3px;
+    button{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background-color: white;
+        color: $dark-gray;
+        
+    }
+}
+
+.iconContainer{
+    width: 25%;
+}
+
+.edit{
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid $outline;
+    border-left: none;
+}
+
+.change{
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid $outline;
+    border-left: 1px solid $outline;
+}
+
+.add{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid $outline;
+}
+
+.merge{
+    border: none;
+}

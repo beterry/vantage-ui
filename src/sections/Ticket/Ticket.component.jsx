@@ -5,6 +5,7 @@ import styles from './Ticket.module.scss'
 
 //import components
 import Tab from '../../components/Tabs/Message/Tab.component'
+import Actions from '../../components/Actions/Actions.component'
 
 const Ticket = () => {
     const [activeTab, setActiveTab] = useState(0)
@@ -42,7 +43,7 @@ const Ticket = () => {
                     <div>Message</div>
                 </div>
                 <div className={styles.right}>
-
+                    <Actions />
                 </div>
             </div>
         </section>
