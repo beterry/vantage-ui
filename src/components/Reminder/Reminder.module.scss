@@ -6,20 +6,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 12px;
         background: $main-green;
         border: none;
+        border-radius: 0 3px 3px 0;
     }
 }
 
 .left{
     background: white;
     border: 1px solid $outline;
+    border-right: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 3px 0 0 3px;
 }
 
 .info{
@@ -30,5 +33,7 @@
 .icon{
     width: 15px;
     height: 15px;
-    background: gray;
+    border-radius: 3px;
+    background: $outline;
+    margin-right: 15px;
 }
