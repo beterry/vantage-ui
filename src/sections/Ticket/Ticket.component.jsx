@@ -6,6 +6,7 @@ import styles from './Ticket.module.scss'
 //import components
 import Tab from '../../components/Tabs/Message/Tab.component'
 import Actions from '../../components/Actions/Actions.component'
+import Reminder from '../../components/Reminder/Reminder.component'
 
 const Ticket = () => {
     const [activeTab, setActiveTab] = useState(0)
@@ -44,6 +45,7 @@ const Ticket = () => {
                 </div>
                 <div className={styles.right}>
                     <Actions />
+                    <Reminder />
                 </div>
             </div>
         </section>
