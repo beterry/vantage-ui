@@ -1,0 +1,32 @@
+@import "../../partials/colors";
+
+.tags{
+    display: flex;
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: $main-green;
+        border: none;
+    }
+}
+
+.left{
+    background: white;
+    border: 1px solid $outline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+
+}
