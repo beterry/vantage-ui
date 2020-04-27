@@ -10,7 +10,7 @@ const data = [
         info: '1 Hour'
     },
     {
-        title: 'Email Thread',
+        title: 'Email Thread Status',
         info: 'Received'
     },
     {

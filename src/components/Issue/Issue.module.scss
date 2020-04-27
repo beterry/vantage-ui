@@ -5,9 +5,10 @@
     background: white;
     border: 1px solid $outline;
     padding: 20px;
+    border-radius: 3px;
     h4{
         text-transform: uppercase;
-        color: $dark-green;
+        color: $darkest-green;
         margin-bottom: 20px;
     }
 }
@@ -28,12 +29,12 @@
 }
 
 .title{
-    width: 30%;
+    width: 35%;
     p{
         font-weight: 900;
     }
 }
 
 .info{
-    width: 70%;
+    width: 65%;
 }
