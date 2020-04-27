@@ -1,0 +1,32 @@
+@import "../../partials/colors";
+
+.ticket{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: $background;
+    padding: 30px;
+}
+
+.tabs{
+    display: flex;
+    border-left: 1px solid $outline;
+}
+
+.info{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 63%;
+    border-radius: 0 3px 3px 3px;
+    border: 1px solid $outline;
+    background: white;
+}
+
+.right{
+    width: 35%;
+    background: red;
+}

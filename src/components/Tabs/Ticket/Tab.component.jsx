@@ -12,7 +12,7 @@ export default ({ticketNumber, active=false, action}) => {
             className={`${styles.tab} ${active ? styles.active : styles.inactive}`}
             onClick={() => handleClick()}
         >
-            <h3>Ticket</h3>
+            <h3 style={{marginRight: '5px'}}>Ticket</h3>
             <h3>{ticketNumber}</h3>
             <div className={styles.icon}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 0 24 24" width="15">

@@ -1,0 +1,25 @@
+@import "../../../partials/colors";
+
+.tab{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-grow: 1;
+    max-width: 180px;
+    border-top: 1px solid $outline;
+    border-right: 1px solid $outline;
+    border-bottom: none;
+    border-left: none;
+    h4{
+        color: $text-gray;
+    }
+}
+
+.inactive{
+    background: $inactive;
+}
+
+.active{
+    background: white;
+}

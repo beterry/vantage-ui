@@ -17,24 +17,22 @@ const TicketTabs = () => {
 
     return (
         <div className={styles.ticketTabs}>
-            <div className={styles.tabsFlex}>
-                <Tab
-                    ticketNumber={1}
-                    active={activeTab === 1 ? true : null}
-                    action={changeActive}
-                />
-                <Tab
-                    ticketNumber={2}
-                    active={activeTab === 2 ? true : null}
-                    action={changeActive}
-                />
-                <Tab
-                    ticketNumber={3}
-                    active={activeTab === 3 ? true : null}
-                    action={changeActive}
-                />
-                <Add />
-            </div>
+            <Tab
+                ticketNumber={1}
+                active={activeTab === 1 ? true : null}
+                action={changeActive}
+            />
+            <Tab
+                ticketNumber={2}
+                active={activeTab === 2 ? true : null}
+                action={changeActive}
+            />
+            <Tab
+                ticketNumber={3}
+                active={activeTab === 3 ? true : null}
+                action={changeActive}
+            />
+            <Add />
         </div>
     )
 }
