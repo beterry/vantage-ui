@@ -1,0 +1,46 @@
+@import "../../partials/colors";
+
+.message{
+    
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    h4{
+        color: $darkest-green;
+    }
+}
+
+.body{
+    margin: 0 20px;
+    padding: 20px;
+    background: $background;
+    border: 1px solid $outline;
+    border-radius: 3px;
+    p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-green;
+        border: none;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        padding: 10px;
+        margin-left: 5px;
+    }
+}
+
