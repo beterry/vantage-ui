@@ -21,6 +21,19 @@ const Ticket = () => {
         setActiveTab(tab)
     }
 
+    const getContents = () => {
+        switch(activeTab){
+            case 0:
+                return <Message />
+            case 1:
+                return <Contact />
+            case 2:
+                return <FAQ />
+            default:
+                return <Message />
+        }
+    }
+
     return (
         <section
             className={styles.ticket}
@@ -47,9 +60,7 @@ const Ticket = () => {
             </div>
             <div className={styles.info}>
                 <div className={styles.left}>
-                    {/* <Message /> */}
-                    {/* <Contact /> */}
-                    <FAQ />
+                    {getContents()}
                 </div>
                 <div className={styles.right}>
                     <Actions />
