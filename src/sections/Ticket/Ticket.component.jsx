@@ -11,6 +11,7 @@ import Tags from '../../components/Tags/Tags.component'
 import Issue from '../../components/Issue/Issue.component'
 import Message from '../../components/Message/Message.component'
 import Contact from '../../components/Contact/Contact.component'
+import FAQ from '../../components/FAQ/FAQ.component'
 import Spacing from '../../components/Spacing/Spacing.component'
 
 const Ticket = () => {
@@ -47,7 +48,8 @@ const Ticket = () => {
             <div className={styles.info}>
                 <div className={styles.left}>
                     {/* <Message /> */}
-                    <Contact />
+                    {/* <Contact /> */}
+                    <FAQ />
                 </div>
                 <div className={styles.right}>
                     <Actions />
