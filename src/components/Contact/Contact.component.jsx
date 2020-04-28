@@ -5,6 +5,7 @@ import styles from './Contact.module.scss'
 
 //import components
 import Table from '../Table/Table.component'
+import History from '../History/History.component'
 
 //data
 const contactData = [
@@ -87,5 +88,6 @@ export default () => (
             title='Address Information'
             data={addressData}
         />
+        <History />
     </div>
 )
