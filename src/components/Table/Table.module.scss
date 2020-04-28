@@ -1,0 +1,35 @@
+@import "../../partials/colors";
+
+.table{
+    margin: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $outline;
+    padding-bottom: 10px;
+    h4{
+        text-transform: uppercase;
+        color: $darkest-green;
+    }
+}
+
+.rowContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    width: 50%;
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px solid $outline;
+    p{
+        width: 25%;
+    }
+    p:first-child{
+        font-weight: 900;
+    }
+}
