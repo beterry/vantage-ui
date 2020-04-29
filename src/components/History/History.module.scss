@@ -32,3 +32,12 @@
         width: 25%;
     }
 }
+
+@media screen and (max-width: 600px){
+    .row{
+        p{
+            width: 30%;
+            margin-right: 20px;
+        }
+    }
+}

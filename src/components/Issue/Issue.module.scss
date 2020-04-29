@@ -38,3 +38,12 @@
 .info{
     width: 65%;
 }
+
+@media screen and (max-width: 1200px){
+    .title{
+        width: 50%;
+    }
+    .info{
+        width: 50%;
+    }
+}

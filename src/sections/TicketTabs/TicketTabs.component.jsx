@@ -9,30 +9,43 @@ import Add from '../../components/Tabs/Ticket/Add.component'
 
 const TicketTabs = () => {
     //set state
+    const [numberOfTickets, setNumberOfTickets] = useState(3)
     const [activeTab, setActiveTab] = useState(1)
 
     const changeActive = (ticketNumber) => {
         setActiveTab(ticketNumber)
     }
 
+    const addTicket = () => {
+        setNumberOfTickets(numberOfTickets + 1)
+    }
+
+    const closeTicket = (ticketNumber) => {
+        setNumberOfTickets(numberOfTickets - 1)
+        
+        setActiveTab(1)
+    }
+
+    let tickets = []
+    for (let i=1; i <= numberOfTickets; i++){
+        tickets.push(
+            <Tab
+                key={`ticket ${i}`}
+                ticketNumber={i}
+                active={activeTab === i ? true : null}
+                handleClick={changeActive}
+                close={closeTicket}
+            />
+        )
+    }
+
     return (
         <div className={styles.ticketTabs}>
-            <Tab
-                ticketNumber={1}
-                active={activeTab === 1 ? true : null}
-                action={changeActive}
+            {/* Add note */}
+            {tickets.map((ticket) => ticket)}
+            <Add 
+                handleClick={addTicket}
             />
-            <Tab
-                ticketNumber={2}
-                active={activeTab === 2 ? true : null}
-                action={changeActive}
-            />
-            <Tab
-                ticketNumber={3}
-                active={activeTab === 3 ? true : null}
-                action={changeActive}
-            />
-            <Add />
         </div>
     )
 }

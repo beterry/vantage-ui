@@ -20,23 +20,25 @@
     border: 1px solid $outline;
     border-right: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding: 10px 15px;
     border-radius: 3px 0 0 3px;
-}
-
-.info{
-    display: flex;
-    align-items: center;
-    p{
-        color: $text-gray;
+    position: relative;
+    input{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        border: none;
+        background: none;
+        padding-left: 50px;
     }
 }
 
 .icon{
-    margin-right: 15px;
+    position: absolute;
+    left: 20px;
     display: flex;
     align-items: center;
 }
