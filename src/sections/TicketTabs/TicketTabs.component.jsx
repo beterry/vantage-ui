@@ -9,23 +9,24 @@ import Add from '../../components/Tabs/Ticket/Add.component'
 
 const TicketTabs = () => {
     //set state
-    const [numberOfTickets, setNumberOfTickets] = useState(3)
-    const [activeTab, setActiveTab] = useState(1)
+    const [numberOfTickets, setNumberOfTickets] = useState(3) //init number of tickets
+    const [activeTab, setActiveTab] = useState(1) //init active tab
 
     const changeActive = (ticketNumber) => {
         setActiveTab(ticketNumber)
     }
 
+    //TODO: set limit
     const addTicket = () => {
         setNumberOfTickets(numberOfTickets + 1)
     }
 
+    // TODO: fix bug where no tab is active if last tab is closed
     const closeTicket = (ticketNumber) => {
         setNumberOfTickets(numberOfTickets - 1)
-        
-        setActiveTab(1)
     }
 
+    //creates array of tickets to render in the render method
     let tickets = []
     for (let i=1; i <= numberOfTickets; i++){
         tickets.push(
@@ -41,7 +42,7 @@ const TicketTabs = () => {
 
     return (
         <div className={styles.ticketTabs}>
-            {/* Add note */}
+            {/* renders array of tickets created above */}
             {tickets.map((ticket) => ticket)}
             <Add 
                 handleClick={addTicket}

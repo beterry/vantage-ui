@@ -15,12 +15,15 @@ import FAQ from '../../components/FAQ/FAQ.component'
 import Spacing from '../../components/Spacing/Spacing.component'
 
 const Ticket = () => {
+    //declare state to track active tab
     const [activeTab, setActiveTab] = useState(0)
 
+    //set active tab to param
     const changeActive = (tab) => {
         setActiveTab(tab)
     }
 
+    //func returns correct content based on active tab
     const getContents = () => {
         switch(activeTab){
             case 0:
@@ -38,6 +41,7 @@ const Ticket = () => {
         <section
             className={styles.ticket}
         >
+            {/* These tabs control the state above */}
             <div className={styles.tabs}>
                 <Tab
                     title='Message'
@@ -58,10 +62,15 @@ const Ticket = () => {
                     id={2}
                 />
             </div>
+
             <div className={styles.info}>
+
+                {/* Calls func to get corrent compnent to display */}
                 <div className={styles.left}>
                     {getContents()}
                 </div>
+
+                {/* Displays components in the right section */}
                 <div className={styles.right}>
                     <Actions />
                     <Spacing size='12px' />
@@ -71,6 +80,7 @@ const Ticket = () => {
                     <Spacing size='12px' />
                     <Issue />
                 </div>
+
             </div>
         </section>
     )
